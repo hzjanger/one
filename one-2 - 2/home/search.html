@@ -1,0 +1,770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>搜索页面</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
+
+		<link href="../basic/css/demo.css" rel="stylesheet" type="text/css" />
+
+		<link href="../css/seastyle.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="../basic/js/jquery-1.7.min.js"></script>
+
+		<!--<script type="text/javascript" src="../js/script.js"></script>-->
+	</head>
+
+	<body>
+
+		<!--顶部导航条 -->
+		<div class="am-container header">
+			<ul class="message-l">
+				<div class="topMessage">
+					<div class="menu-hd">
+						<a href="#" target="_top" class="h">亲，请登录</a>
+						<a href="#" target="_top">免费注册</a>
+					</div>
+				</div>
+			</ul>
+			<ul class="message-r">
+				<div class="topMessage home">
+					<div class="menu-hd">
+						<a href="#" target="_top" class="h">商城首页</a>
+					</div>
+				</div>
+				<div class="topMessage my-shangcheng">
+					<div class="menu-hd MyShangcheng">
+						<a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a>
+					</div>
+				</div>
+				<div class="topMessage mini-cart">
+					<div class="menu-hd">
+						<a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a>
+					</div>
+				</div>
+				<div class="topMessage favorite">
+					<div class="menu-hd">
+						<a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a>
+					</div>
+			</ul>
+			</div>
+
+			<!--悬浮搜索框-->
+
+			<div class="nav white">
+				<div class="logo"><img src="../images/logo.png" /></div>
+				<div class="logoBig">
+					<li><img src="../images/logobig.png" /></li>
+				</div>
+
+				<div class="search-bar pr">
+					<a name="index_none_header_sysc" href="#"></a>
+					<form>
+						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+						<input id="ai-topsearch" class="submit am-btn" value="搜索" index="1" type="submit">
+					</form>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+			<b class="line"></b>
+			<div class="search">
+				<div class="search-list">
+					<div class="nav-table">
+						<div class="long-title"><span class="all-goods">全部分类</span></div>
+						<div class="nav-cont">
+							<ul>
+								<li class="index">
+									<a href="#">首页</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="am-g am-g-fixed">
+
+						<div class="am-u-sm-12 am-u-md-12">
+							<div class="theme-popover">
+								<ul class="select">
+									<p class="title font-normal">
+										<span class="fl">java</span>
+										<span class="total fl">搜索到<strong class="num">22</strong>本相关书籍</span>
+									</p>
+									<div class="clear"></div>
+									<li class="select-result">
+										<dl>
+											<dt>已选</dt>
+											<dd class="select-no"></dd>
+											<p class="eliminateCriteria">清除</p>
+										</dl>
+									</li>
+									<div class="clear"></div>
+									<li class="select-list">
+										<dl id="select1">
+											<dt class="am-badge am-round">方向</dt>
+											<div class="dd-conent">
+												<dd class="select-all selected"><a href="#">全部</a></dd>
+												<dd><a href="#" title="前端开发">前端开发</a></dd>
+												<dd><a href="#">后端开发</a></dd>
+												<dd><a href="#">移动开发</a></dd>
+												<dd><a href="#">数据库</a></dd>
+												<dd><a href="#">人工智能</a></dd>
+												<dd><a href="#">云计算&大数据</a></dd>
+												<dd><a href="#">运维&测试</a></dd>
+												<dd><a href="#">UI设计</a></dd>
+											</div>
+
+										</dl>
+									</li>
+									<li class="select-list">
+										<dl id="select2">
+											<dt class="am-badge am-round">分类</dt>
+											<div class="dd-conent">
+												<dd class="select-all selected">
+													<a href="#">全部</a>
+												</dd>
+												<dd><a href="/search?key=HTML/CSS">HTML/CSS</a></dd>
+												<dd><a href="/search?key=JavaScript">JavaScript</a></dd>
+												<dd><a href="/search?key=Html5">Html5</a></dd>
+												<dd><a href="/search?key=CSS3">CSS3</a></dd>
+												<dd><a href="/search?key=jQuery">jQuery</a></dd>
+												<dd><a href="/search?key=Node.js">Node.js</a></dd>
+												<dd><a href="/search?key=Bootstrap">Bootstrap</a></dd>
+												<dd><a href="/search?key=Angular">Angular</a></dd>
+												<dd><a href="/search?key=React.js">React.js</a></dd>
+												<dd>
+													<a href="/search?key=Vue.js">Vue.js</a>
+												</dd>
+												<dd>
+													<a href="/search?key=Saaa/Less">Saaa/Less</a>
+												</dd>
+												<dd>
+													<a href="/search?key=WebApp">WebApp</a>
+												</dd>
+												<dd>
+													<a href="/search?key=前端工具">前端工具</a>
+												</dd>
+												<dd>
+													<a href="/search?key=PHP">PHP</a>
+												</dd>
+												<dd>
+													<a href="/search?key=Java">Java</a>
+												</dd>
+												<dd>
+													<a href="/search?key=SpringBoot">SpringBoot</a>
+												</dd>
+												<dd>
+													<a href="/search?key=Python">Python</a>
+												</dd>
+												<dd>
+													<a href="/search?key=C">C</a>
+												</dd>
+												<dd>
+													<a href="/search?key=C++">C++</a>
+												</dd>
+												<dd>
+													<a href="/search?key=Go">Go</a>
+												</dd>
+												<dd>
+													<a href="/search?key=C#">C#</a>
+												</dd>
+												<dd>
+													<a href="/search?key=Ruby">Ruby</a>
+												</dd>
+												<dd>
+													<a href="/search?key=Android">Android</a>
+												</dd>
+												<dd>
+													<a href="/search?key=iOS">iOS</a>
+												</dd>
+												<dd>
+													<a href="/search?key=Unity 3D">Unity 3D</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">Cocos2d-x</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">MySQL</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">MongoDB</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">Oracle</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">SQL Server</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">机器学习</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">深度学习</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">大数据</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">云计算</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">测试</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">Linux</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">动效动画</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">APPUI设计</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">设计工具</a>
+												</dd>
+												<dd>
+													<a href="/search?key=机器学习">设计基础</a>
+												</dd>
+											</div>
+										</dl>
+									</li>
+									<li class="select-list">
+										<dl id="select3">
+											<dt class="am-badge am-round">类型</dt>
+											<div class="dd-conent">
+												<dd class="select-all selected">
+													<a href="#">全部</a>
+												</dd>
+												<dd>
+													<a href="#">基础</a>
+												</dd>
+												<dd>
+													<a href="#">案例</a>
+												</dd>
+												<dd>
+													<a href="#">框架</a>
+												</dd>
+												<dd>
+													<a href="#">工具</a>
+												</dd>
+												<dd>
+													<a href="#">设计模式</a>
+												</dd>
+											</div>
+										</dl>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="search-content">
+								<div class="sort">
+									<li class="first">
+										<a title="综合">综合排序</a>
+									</li>
+									<li>
+										<a title="借阅量排序">借阅量排序</a>
+									</li>
+									<li>
+										<a title="评价排序">评价排序</a>
+									</li>
+								</div>
+								<div class="clear"></div>
+
+								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
+									<li>
+										<div class="i-pic limit menu1">
+											<img src="../img1/java并发编程实战.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/137-1.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/137-1.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/javascript语言精粹.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/java并发编程实战.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/java并发编程实战.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/java并发编程实战.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/java并发编程实战.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/137-1.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/137-1.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/137-1.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/137-1.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/137-1.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li><li>
+									<div class="i-pic limit menu1">
+
+										<img src="../img1/137-1.jpg" />
+										<p class="title fl">java并发编程实战</p>
+										<p class="price fl">
+											<b>¥</b>
+											<strong>56.90</strong>
+										</p>
+										<p class="number fl">
+											借阅量<span>1110</span>
+										</p>
+									</div>
+								</li><li>
+									<div class="i-pic limit menu1">
+
+										<img src="../img1/137-1.jpg" />
+										<p class="title fl">java并发编程实战</p>
+										<p class="price fl">
+											<b>¥</b>
+											<strong>56.90</strong>
+										</p>
+										<p class="number fl">
+											借阅量<span>1110</span>
+										</p>
+									</div>
+								</li><li>
+									<div class="i-pic limit menu1">
+
+										<img src="../img1/137-1.jpg" />
+										<p class="title fl">java并发编程实战</p>
+										<p class="price fl">
+											<b>¥</b>
+											<strong>56.90</strong>
+										</p>
+										<p class="number fl">
+											借阅量<span>1110</span>
+										</p>
+									</div>
+								</li>
+
+
+
+
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/java并发编程实战.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="i-pic limit menu1">
+
+											<img src="../img1/java并发编程实战.jpg" />
+											<p class="title fl">java并发编程实战</p>
+											<p class="price fl">
+												<b>¥</b>
+												<strong>56.90</strong>
+											</p>
+											<p class="number fl">
+												借阅量<span>1110</span>
+											</p>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+							<div class="search-side">
+
+								<div class="side-title">
+									经典书籍
+								</div>
+								<li>
+									<div class="i-pic check menu1">
+										<img src="../img1/java并发编程实战.jpg" />
+										<p class="check-title">java并发编程实战</p>
+										<p class="price fl">
+											<b>¥</b>
+											<strong>29.90</strong>
+										</p>
+										<p class="number fl">
+											借阅量<span>1110</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="i-pic check menu1">
+										<img src="../img1/java并发编程实战.jpg" />
+										<p class="check-title">java并发编程实战</p>
+										<p class="price fl">
+											<b>¥</b>
+											<strong>8.90</strong>
+										</p>
+										<p class="number fl">
+											借阅量<span>1110</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="i-pic check menu1">
+										<img src="../img1/java并发编程实战.jpg" />
+										<p class="check-title">java并发编程实战</p>
+										<p class="price fl">
+											<b>¥</b>
+											<strong>29.90</strong>
+										</p>
+										<p class="number fl">
+											借阅量<span>1110</span>
+										</p>
+									</div>
+								</li>
+
+							</div>
+							<div class="clear"></div>
+							<!--分页 -->
+							<ul class="am-pagination am-pagination-right">
+								<li class="am-disabled">
+									<a href="#">&laquo;</a>
+								</li>
+								<li class="am-active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">&raquo;</a>
+								</li>
+							</ul>
+
+						</div>
+
+					</div>
+					<div class="footer">
+						<div class="footer-bd">
+							<p>
+								<em>吉首大学创新创业实验室</em>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<script>
+				$(window).resize(function() {
+					var $img = $(".menu1 img");
+					var minnHeight = 20000;
+					for(var i = 0; i < $img.length; i++) {
+						var nWidth = $img[i].naturalWidth
+						var nHeight = $img[i].naturalHeight
+						var nowHeight = $img[i].width / nWidth * nHeight;
+						if(minnHeight > nowHeight) {
+							minnHeight = nowHeight;
+						}
+					}
+					for(var i = 0; i < $img.length; i++) {
+						$img[i].height = minnHeight;
+					}
+				});
+				$().ready(function() {
+					var $img = $(".menu1 img");
+					var minnHeight = 20000;
+					for(var i = 0; i < $img.length; i++) {
+						var nWidth = $img[i].naturalWidth
+						var nHeight = $img[i].naturalHeight
+						var nowHeight = $img[i].width / nWidth * nHeight;
+						if(minnHeight > nowHeight) {
+							minnHeight = nowHeight;
+						}
+					}
+					for(var i = 0; i < $img.length; i++) {
+						$img[i].height = minnHeight;
+					}
+					$("#select1 dd").click(function() {
+						$(this).addClass("selected").siblings().removeClass("selected");
+						console.log($(this).text());
+						if($(this).hasClass("select-all")) {
+							$("#selectA").remove();
+						} else {
+							var copyThisA = $(this).clone();
+							if($("#selectA").length > 0) {
+								$("#selectA a").html($(this).text());
+							} else {
+								$(".select-result dl").append(copyThisA.attr("id", "selectA"));
+
+							}
+						}
+						var $select2 = $("#select2 dd");
+						for (var i = 1; i < $select2.length; i++){
+							$select2[i].style.display = "none";
+						}
+                        if($(this).text() == "全部"){
+
+                            for (var i = 1; i < $select2.length; i++){
+                                $select2[i].style.display = "inline-block";
+                            }
+                        }
+						else if($(this).text() == "前端开发"){
+							
+							for (var i = 1; i <= 13; i++){
+								$select2[i].style.display = "inline-block";
+							}
+						}
+						else if($(this).text() == "后端开发"){
+							for (var i = 14; i <= 22; i++){
+								$select2[i].style.display = "inline-block";
+							}
+						}
+						else if($(this).text() == "移动开发"){
+							for (var i = 23; i <= 26; i++){
+								$select2[i].style.display = "inline-block";
+							}
+						}
+						else if($(this).text() == "数据库"){
+							for (var i = 27; i <= 30; i++){
+								$select2[i].style.display = "block";
+							}
+						}
+						else if($(this).text() == "人工智能"){
+							for (var i = 31; i <= 32; i++){
+								$select2[i].style.display = "block";
+							}
+						}
+						else if($(this).text() == "云计算&大数据"){
+							for (var i = 33; i <= 34; i++){
+								$select2[i].style.display = "block";
+							}
+						}
+						else if($(this).text() == "运维&测试"){
+							for (var i = 35; i <= 36; i++){
+								$select2[i].style.display = "block";
+							}
+						}
+						else if($(this).text() == "UI设计"){
+							for (var i = 37; i <= 40; i++){
+								$select2[i].style.display = "block";
+							}
+						}
+					})
+				})
+
+				$("#select2 dd").click(function() {
+					$(this).addClass("selected").siblings().removeClass("selected");
+					if($(this).hasClass("select-all")) {
+						$("#selectB").remove();
+					} else {
+						var copyThisB = $(this).clone();
+						if($("#selectB").length > 0) {
+							$("#selectB a").html($(this).text());
+						} else {
+							$(".select-result dl").append(copyThisB.attr("id", "selectB"));
+						}
+					}
+
+				});
+
+				$("#select3 dd").click(function() {
+					$(this).addClass("selected").siblings().removeClass("selected");
+					if($(this).hasClass("select-all")) {
+						$("#selectC").remove();
+					} else {
+						var copyThisC = $(this).clone();
+						if($("#selectC").length > 0) {
+							$("#selectC a").html($(this).text());
+						} else {
+							$(".select-result dl").append(copyThisC.attr("id", "selectC"));
+						}
+					}
+				});
+			</script>
+			<!--引导 -->
+			<div class="navCir">
+				<li>
+					<a href="home.html"><i class="am-icon-home "></i>首页</a>
+				</li>
+				<li>
+					<a href="sort.html"><i class="am-icon-list"></i>分类</a>
+				</li>
+				<li>
+					<a href="shopcart.html"><i class="am-icon-shopping-basket"></i>购物车</a>
+				</li>
+				<li>
+					<a href="../person/index.html"><i class="am-icon-user"></i>我的</a>
+				</li>
+			</div>
+			<script>
+				window.jQuery || document.write('<script src="basic/js/jquery-1.9.min.js"><\/script>');
+			</script>
+			<script type="text/javascript" src="../basic/js/quick_links.js"></script>
+
+			<div class="theme-popover-mask"></div>
+
+	</body>
+
+</html>
