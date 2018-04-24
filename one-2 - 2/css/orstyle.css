@@ -18,11 +18,12 @@ img{width: 100%;}
 .order-title {overflow: hidden; padding:10px 0px ;}
 .order-title span{display: none;}
 /*商品信息*/
-.item-pic {width: 80px;height: 80px;border: 1px solid #EEE;float: left;overflow: hidden;margin-top: 20px;margin-left: 3px;}
-.item-info {margin:0px 0px 0px 91px;padding-right: 25px;}
+.item-pic {width: 76px;height: 100px;float: left;overflow: hidden;margin-left: 3px;}
+.item-info {margin:0px 0px 0px 91px;
+    line-height: 56px;}
 .item-basic-info {padding-top: 20px;text-align: left;}
 
-.td-price,.td-number,.td-operation{margin-top: 20px;}
+.td-price,.td-number,.td-operation,.td-send-time,.td-borrow-time,.td-other{margin-top: 40px;}
 .user-order .am-btn{font-size:14px;color: #FFF;}
 .info-little{color: #9C9C9C;}
 
@@ -90,7 +91,7 @@ vertical-align: top;margin-top: 5px;margin-left: -24px;color: #b5b5b5;font-size:
 
 
 /*布局*/
-.td-price, .td-number{margin-top: 23px;}
+/*.td-price, .td-number{margin-top: 0px;}*/
 .th-item,.td-item{width:67%;overflow: hidden;}
 .th-price,.td-price{position:static;width:10%;text-align: center;}
 .th-number,.td-number{position:static;width:8%;text-align: center;}
@@ -123,15 +124,19 @@ ul.td-changeorder {width:20%}
 .th-price,.td-price{width:10%}
 .th-number,.td-number{width:5%}
 .th-operation,.td-operation{width:15%}
+.td-send-time{width: 10%}
+.td-borrow-time{width: 11%}
+.td-other{width: 8%}
 .th-amount,.th-status,.th-change{display:block;width:10%}
 
 
 /*右侧操作定位*/
 .order-content{position: relative;overflow: hidden;}
 .order-left ul{width:100%;overflow: hidden;}
-.order-right{width:30%;position: absolute;top:50%;margin-top: -16px;right: 0;overflow: visible;}
+.order-right{width:30%;position: absolute;top:45%;margin-top: -16px;right: 0;overflow: visible;}
 .order-right .td{width:33.33%;float: left;text-align: center; position: static; padding:0px 0px ;}
-.order-right .td-amount{font-size: 12px;}
+.order-right .td-amount{font-size: 12px;
+    margin-top: 12px;}
 .order-right .td-amount p{display:block;}
 .order-right .td-status p.Mystatus{position:static;width:100% ;color: #000;}
 .order-right .td-status p.order-info{height:16px; line-height:16px;border: none;padding:0px 0px ;}
@@ -150,7 +155,8 @@ ul.td-changeorder {width:20%}
 .td-status p.order-info{float:none;margin-right:0px;}
 .order-status3 .item-status{margin-top: -16px;}
 .order-status4 .item-status,.order-status5 .item-status{margin-top: -8px;}
-.order-status0 .item-status{margin-top: 8px;}
+.order-status0 .item-status{
+    margin-top: 8px;}
 
 /*修改订单详情*/
 .order-infoaside{margin:20px 0px;overflow: hidden;max-width:900px ;}

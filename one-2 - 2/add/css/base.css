@@ -1,0 +1,26 @@
+.nav.white .logoBig {
+    margin-left: 87px;
+    width: 144px;
+}
+
+.nav.white .logoBig img {
+    width: 90%;
+}
+
+#ai-topsearch {
+    background: #2b5e5f none repeat scroll 0% 0%;
+}
+
+.search-bar form {
+    border: 2px solid #2b5e5f;
+}
+
+#PageNum{
+    text-align:center; 
+    padding-top:20px;
+    padding-bottom: 20px;
+
+}
+#PageNum li{ text-align:center; display:inline-block; padding:0px 5px;}
+#PageNum li a{ display:block; background-color:#FFF; height:30px; line-height:30px; vertical-align:middle; font-size:12px; padding:0px 10px;-moz-border-radius: 30px; -webkit-border-radius: 30px;border-radius:30px; text-decoration:none; color:#333;}
+#PageNum li a:hover{ background-color:#eb6d48; color:#FFF;}
