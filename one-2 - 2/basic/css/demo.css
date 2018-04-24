@@ -481,7 +481,7 @@ input.min {
 		display: none;
 	}
 	.nav.white .logoBig {
-		display: block;
+		/*display: block;*/
 		float: left;
 		height: 56px;
 		width: 115px;
@@ -737,7 +737,7 @@ input.min {
 		max-width: 1200px;
 	}
 	.footer {
-		max-width: 1200px;
+		max-width: 1300px;
 		margin: auto;
 	}
 	/*分类*/

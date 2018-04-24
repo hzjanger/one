@@ -146,7 +146,7 @@ header article{max-width: 1200px;margin:0px auto;}
 .message-r .topMessage {float: left;padding: 0px 6px;height: 35px;line-height: 35px;}
 /*浮动框*/
 .nav.white{width:100%;margin:0px auto;}
-.nav.white .logoBig{ display:block;float:left;height:56px;width:115px; margin:0px auto; margin-left:5%} 
+.nav.white .logoBig{ /*display:block;*/float:left;height:56px;width:115px; margin:0px auto; margin-left:5%}
 .nav.white .logoBig img{width:100%;}
 .my-cart { width: 46px;height: 46px;}
 

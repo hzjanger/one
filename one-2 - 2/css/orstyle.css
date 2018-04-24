@@ -92,11 +92,10 @@ vertical-align: top;margin-top: 5px;margin-left: -24px;color: #b5b5b5;font-size:
 
 /*布局*/
 /*.td-price, .td-number{margin-top: 0px;}*/
-.th-item,.td-item{width:67%;overflow: hidden;}
-.th-price,.td-price{position:static;width:10%;text-align: center;}
-.th-number,.td-number{position:static;width:8%;text-align: center;}
+.th-item,.td-item{width:40%;overflow: hidden;}
+.th-price,.td-price,.th-amount,.th-status,.th-change,.td-borrow-time,.td-send-time,.td-other{position:static;width:10%;text-align: center;}
+.th-number,.td-number{position:static;width:5%;text-align: center;}
 .th-operation,.td-operation{position:static;width:15%;text-align: center;}
-.th-amount,.th-status,.th-change{display: none;}
 .td-amount{font-size:16px;}
 .td-status p.Mystatus{text-align: center;width:15%;top:-30px;}
 
@@ -125,8 +124,8 @@ ul.td-changeorder {width:20%}
 .th-number,.td-number{width:5%}
 .th-operation,.td-operation{width:15%}
 .td-send-time{width: 10%}
-.td-borrow-time{width: 11%}
-.td-other{width: 8%}
+.td-borrow-time{width: 10%}
+.td-other{width: 10%}
 .th-amount,.th-status,.th-change{display:block;width:10%}
 
 

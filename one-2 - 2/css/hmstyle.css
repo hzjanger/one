@@ -1408,6 +1408,9 @@ dt+dd {
 		position: relative;
 		border-bottom: 2px solid #000;
 		margin-top: 10px;
+		color: #fff;
+		font-weight: 600;
+		background-color: #ff9000  ;
 	}
 	.activity .shopTitle {
 		margin-top: 10px;
@@ -2696,10 +2699,11 @@ dt+dd {
 	.am-container {
 		padding-left: 0rem;
 		padding-right: 0rem;
-		max-width: 1200px;
+		max-width: 1290px;
+		/*background-color: #2b5e5f;*/
 	}
 	.am-g-fixed {
-		max-width: 1200px
+		max-width: 1300px
 	}
 	.flood li {
 		width: 16.66667%;
@@ -3041,6 +3045,7 @@ dt+dd {
 }
 
 .outer-border{
+	margin-left: 25px;
  	padding: 3px;
 	border: none;
 	text-align: center;
