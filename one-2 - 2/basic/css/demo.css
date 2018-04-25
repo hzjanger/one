@@ -641,7 +641,7 @@ input.min {
 		font-size: 16px;
 	}
 	.long-title {
-		background: #d2364c;
+		background: #2b5e5f;
 		color: #fff;
 		height: 45px;
 		line-height: 45px;
@@ -725,7 +725,7 @@ input.min {
 		display: block;
 		width: 100%;
 		height: 2px;
-		border-bottom: 2px solid #d2364c;
+		border-bottom: 2px solid #2b5e5f;
 		position: absolute;
 		top: 180px;
 		z-index: 5;
