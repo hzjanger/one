@@ -23,7 +23,7 @@ img{width: 100%;}
     line-height: 56px;}
 .item-basic-info {padding-top: 20px;text-align: left;}
 
-.td-price,.td-number,.td-operation,.td-send-time,.td-borrow-time,.td-other{margin-top: 40px;}
+.td-price,.td-send-time,.td-borrow-time,.td-other{margin-top: 40px;}
 .user-order .am-btn{font-size:14px;color: #FFF;}
 .info-little{color: #9C9C9C;}
 
@@ -121,6 +121,7 @@ ul.td-changeorder {width:20%}
 
 .th-item,.td-item{width:40%;overflow: hidden;}
 .th-price,.td-price{width:10%}
+.th-item-10{width: 10%;}
 .th-number,.td-number{width:5%}
 .th-operation,.td-operation{width:15%}
 .td-send-time{width: 10%}

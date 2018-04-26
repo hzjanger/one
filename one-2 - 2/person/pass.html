@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>订单管理</title>
+		<title>已通过</title>
 
 		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -13,7 +13,7 @@
 		<link href="../css/personal.css" rel="stylesheet" type="text/css">
 		<link href="../css/orstyle.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../add/css/base.css">
-
+        <link rel="stylesheet" href="../add/css/person/base.css">
 		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
 		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
 
@@ -100,16 +100,16 @@
 											<td class="td-inner">数量</td>
 										</div>
 										<div class="th th-operation">
-											<td class="td-inner">借书人</td>
+											<td class="td-inner">操作</td>
 										</div>
-										<div class="th th-amount">
-											<td class="td-inner">借书人编号</td>
+										<div class="th th-item-10">
+											<td class="td-inner">添加时间</td>
 										</div>
-										<div class="th th-status">
-											<td class="td-inner">状态</td>
+										<div class="th th-item-10">
+											<td class="td-inner">同意时间</td>
 										</div>
-										<div class="th th-change">
-											<td class="td-inner">借阅时间</td>
+										<div class="th th-item-10">
+											<td class="td-inner">其他</td>
 										</div>
 									</div>
 								    <div class="order-main">
@@ -126,37 +126,37 @@
                                                                 </div>
                                                                 <div class="item-info">
                                                                     <div class="item-basic-info">
-                                                                        <a href="#">javascript高级程序设计（第三版）</a>
+                                                                        <a href="#" title="javascript高级程序设计(第三版)">javascript高级程序设计(第三版)</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-price">
-                                                                <div class="item-price">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-number">
                                                                     333
                                                                 </div>
                                                             </li>
                                                             <li class="td td-number">
-                                                                <div class="item-number">
+                                                                <div class="item-counter">
                                                                     <span>×</span>2
                                                                 </div>
                                                             </li>
                                                             <li class="td td-operation">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                                <a class="item-operation item-operation-a">
+                                                                    暂无操作
+                                                                </a>
+                                                            </li>
+                                                            <li class="td th-item-10">
+                                                                <div class="th-borrow-time" title="2016-4-20">
+                                                                    2016-4-20
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-borrow-time">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                            <li class="td th-item-10">
+                                                                <div class="th-give-time" title="2018-4-26">
+                                                                    2018-4-26
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-send-time">
-                                                                <div class="item-operation">
-                                                                    myphone
-                                                                </div>
-                                                            </li>
-                                                            <li class="td td-other">
-                                                                <div class="item-operation">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-other">
                                                                     无
                                                                 </div>
                                                             </li>
@@ -176,37 +176,37 @@
                                                                 </div>
                                                                 <div class="item-info">
                                                                     <div class="item-basic-info">
-                                                                        <a href="#">javascript高级程序设计（第三版）</a>
+                                                                        <a href="#" title="javascript高级程序设计(第三版)">javascript高级程序设计(第三版)</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-price">
-                                                                <div class="item-price">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-number">
                                                                     333
                                                                 </div>
                                                             </li>
                                                             <li class="td td-number">
-                                                                <div class="item-number">
+                                                                <div class="item-counter">
                                                                     <span>×</span>2
                                                                 </div>
                                                             </li>
                                                             <li class="td td-operation">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                                <a class="item-operation item-operation-a">
+                                                                    暂无操作
+                                                                </a>
+                                                            </li>
+                                                            <li class="td th-item-10">
+                                                                <div class="th-borrow-time" title="2016-4-20">
+                                                                    2016-4-20
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-borrow-time">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                            <li class="td th-item-10">
+                                                                <div class="th-give-time" title="2018-4-26">
+                                                                    2018-4-26
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-send-time">
-                                                                <div class="item-operation">
-                                                                    myphone
-                                                                </div>
-                                                            </li>
-                                                            <li class="td td-other">
-                                                                <div class="item-operation">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-other">
                                                                     无
                                                                 </div>
                                                             </li>
@@ -226,37 +226,37 @@
                                                                 </div>
                                                                 <div class="item-info">
                                                                     <div class="item-basic-info">
-                                                                        <a href="#">javascript高级程序设计（第三版）</a>
+                                                                        <a href="#" title="javascript高级程序设计(第三版)">javascript高级程序设计(第三版)</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-price">
-                                                                <div class="item-price">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-number">
                                                                     333
                                                                 </div>
                                                             </li>
                                                             <li class="td td-number">
-                                                                <div class="item-number">
+                                                                <div class="item-counter">
                                                                     <span>×</span>2
                                                                 </div>
                                                             </li>
                                                             <li class="td td-operation">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                                <a class="item-operation item-operation-a">
+                                                                    暂无操作
+                                                                </a>
+                                                            </li>
+                                                            <li class="td th-item-10">
+                                                                <div class="th-borrow-time" title="2016-4-20">
+                                                                    2016-4-20
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-borrow-time">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                            <li class="td th-item-10">
+                                                                <div class="th-give-time" title="2018-4-26">
+                                                                    2018-4-26
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-send-time">
-                                                                <div class="item-operation">
-                                                                    myphone
-                                                                </div>
-                                                            </li>
-                                                            <li class="td td-other">
-                                                                <div class="item-operation">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-other">
                                                                     无
                                                                 </div>
                                                             </li>
@@ -276,37 +276,37 @@
                                                                 </div>
                                                                 <div class="item-info">
                                                                     <div class="item-basic-info">
-                                                                        <a href="#">javascript高级程序设计（第三版）</a>
+                                                                        <a href="#" title="javascript高级程序设计(第三版)">javascript高级程序设计(第三版)</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-price">
-                                                                <div class="item-price">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-number">
                                                                     333
                                                                 </div>
                                                             </li>
                                                             <li class="td td-number">
-                                                                <div class="item-number">
+                                                                <div class="item-counter">
                                                                     <span>×</span>2
                                                                 </div>
                                                             </li>
                                                             <li class="td td-operation">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                                <a class="item-operation item-operation-a">
+                                                                    暂无操作
+                                                                </a>
+                                                            </li>
+                                                            <li class="td th-item-10">
+                                                                <div class="th-borrow-time" title="2016-4-20">
+                                                                    2016-4-20
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-borrow-time">
-                                                                <div class="item-operation">
-                                                                    myphone
+                                                            <li class="td th-item-10">
+                                                                <div class="th-give-time" title="2018-4-26">
+                                                                    2018-4-26
                                                                 </div>
                                                             </li>
-                                                            <li class="td td-send-time">
-                                                                <div class="item-operation">
-                                                                    myphone
-                                                                </div>
-                                                            </li>
-                                                            <li class="td td-other">
-                                                                <div class="item-operation">
+                                                            <li class="td th-item-10">
+                                                                <div class="item-other">
                                                                     无
                                                                 </div>
                                                             </li>

@@ -1,0 +1,21 @@
+
+.item-operation-a{
+    line-height: 100px;
+    color: #000;
+    cursor: pointer;
+}
+@media only screen and (min-width: 640px){
+    .th-item-10{
+        width: 10%;
+    }
+    .th-give-time,.item-number,.item-counter,.th-borrow-time,.item-other {
+        line-height: 100px;
+    }
+
+    .item-basic-info,.borrow-time,.give-time,.book-amount,.th-give-time,.item-number,.item-counter,.th-borrow-time,.item-other{
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        width:100%;
+    }
+}
